@@ -16,8 +16,8 @@ module Mutations
           post "/graphql", params: {query: query}
           json = JSON.parse(response.body, symbolize_names: true)
           data = json[:data][:createCustomer]
-          expect(data[:first_name]).to eq("Dani")
-          expect(data[:last_name]).to eq("Coleman")
+          expect(data[:firstName]).to eq("Dani")
+          expect(data[:lastName]).to eq("Coleman")
           expect(data[:email]).to eq("dani@coleman.ltd")
           expect(data[:address]).to eq("123 My Street, Denver, CO 80002")
         end
@@ -29,7 +29,7 @@ module Mutations
             createCustomer(
             input: {
               firstName: "Dani"
-              lastName: "Colemen"
+              lastName: "Coleman"
               email: "dani@coleman.ltd"
               address: "123 My Street, Denver, CO 80002"
             }
