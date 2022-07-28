@@ -4,8 +4,4 @@ class Tea < ApplicationRecord
 
   has_many :subscriptions
   has_many :customers, through: :subscriptions
-
-  # def self.tea_title
-  #   @title
-  # end
 end
