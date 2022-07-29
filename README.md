@@ -8,10 +8,6 @@
 - [GraphQL Endpoints](#graphql-endpoints)
 - [Contact Info](#contact-info)
 
-## Deployed App
-
-Vist the deployed PlanIt app at [https://planit-earth.netlify.app/](https://planit-earth.netlify.app/)
-
 ## Local Deployment
 
 See this [Local Setup Guide](local_setup_guide.md) for detailed instructions on how to deploy the app in a local environment.
