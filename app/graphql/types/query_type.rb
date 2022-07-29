@@ -14,5 +14,13 @@ module Types
     def get_customer(id:)
       Customer.find(id)
     end
+
+    field :get_tea, Types::TeaType, null: false, description: "Returns a single tea by id" do
+      argument :id, ID, required: true
+    end
+
+    def get_tea(id:)
+      Tea.find(id)
+    end
   end
 end
