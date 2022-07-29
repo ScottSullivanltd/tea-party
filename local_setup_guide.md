@@ -1,8 +1,8 @@
 # Tea-Party Setup
 
-Clone down the [repo](https://github.com/planit-2201/planit_be):
+Clone down the [repo](https://github.com:ScottSullivanltd/tea-party.git):
 ```
-git clone git@github.com:planit-2201/planit_be.git
+git clone git@github.com:ScottSullivanltd/tea-party.git
 ```
 
 Change your working directory to the repo's root directory:
