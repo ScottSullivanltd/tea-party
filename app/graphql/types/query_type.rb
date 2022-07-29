@@ -22,5 +22,14 @@ module Types
     def get_tea(id:)
       Tea.find(id)
     end
+
+    field :get_customer_subscription, Types::SubscriptionType, null: false, description: "Activates a customer subscription" do
+      argument :customer_id, ID, required: true
+      argument :tea_id, ID, required: true
+    end
+
+    def get_customer_subscription(customer_id:, tea_id:)
+      Subscription.where("customer_id = ? AND tea_id = ?", customer_id, tea_id)
+    end
   end
 end
